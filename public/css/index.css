@@ -1,0 +1,11 @@
+#rocket {
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    bottom: 100px;
+    background-color: aquamarine;
+}
+
+body {
+    background-color: blueviolet;
+}
