@@ -74,11 +74,12 @@ body {
 .rocket{
    
     visibility: hidden;
-    display:flex;
-    align-self: center;
+    /* display:flex; */
+    /* align-self: center; */
     justify-content: center;
    
     position: absolute;
+    bottom:105%;
  
     
    
