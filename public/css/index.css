@@ -1,11 +1,173 @@
-#rocket {
-    height: 200px;
-    width: 500px;
-    position: absolute;
-    bottom: 100px;
-    background-color: aquamarine;
+*{
+    font-family: 'Montserrat';
 }
 
+    
 body {
-    background-color: blueviolet;
+    /* background-image:url("public/images/26346035.jpg"); */
+    /* background-color: black; */
+    text-align: center;
+    background-size: 100% 170% ;
+    background-repeat: no-repeat;
+    background-color: black;
+    }
+    @keyframes fade{
+        0%{
+            opacity:0;
+        }
+       
+        50%{
+            opacity:0;
+        }
+        100%{
+            opacity:1;
+        }
+    }
+    @keyframes grow{
+        0%{
+            height:0;
+        }
+        100%{
+            height:20rem;
+        }
+    }
+
+@keyframes fly{
+    0%{
+        visibility: hidden;
+        display: flex;
+        bottom :100%;
+    }
+    1%{
+        bottom:99%;
+        visibility: visible;
+    }
+  
+  
+   
+    100%{
+        opacity:1;
+        bottom: 0%;
+        display:flex;
+        visibility: visible;  
+      }
 }
+.heading{
+   
+   color:white;
+   
+   font-size: 3rem;
+   font-family: 'Montserrat';
+  
+    animation-name: fade;
+    animation-duration: 3s;
+}
+.subhead{
+    font-size: 2.4rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align:center;
+
+}
+
+
+.rocket{
+   
+    visibility: hidden;
+    display:flex;
+    align-self: center;
+    justify-content: center;
+   
+    position: absolute;
+ 
+    
+   
+    animation-name: fly;
+    animation-duration: 2.5s;
+    bottom:0%;
+    opacity:1;
+    visibility: visible;
+    
+
+    
+   
+   
+}
+
+.card{
+    height:20rem;
+    width:25rem;
+    color:white;
+    border-style:dashed;
+    border-color: white;
+    border-radius: 2%;
+    padding: 2px;
+    
+    /* margin: 2%; */
+}
+
+.row{
+    display:flex;
+    width: 100%;
+    height:25rem;
+    justify-content: center;
+    /* position:realtive; */
+    
+}
+.hint-text{
+    font-family: 'Montserrat';
+    font-size:1.4rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.col{
+    display:flex;
+    
+    width:20%;
+}
+.solidCard{
+    animation-name:grow ;
+    animation-duration: 2.5s;
+    height:20rem;
+    width:25rem;
+
+    border-style:solid;
+    border-color: white;
+    opacity:0.8;
+    background-color: white;
+    color: black;
+    /* text-align:left; */
+    /* font-size: 1.4rem; */
+    padding:2px;
+    
+
+}
+.button{
+    animation-name: fade;
+    animation-duration: 2s;
+    display:flex;
+    justify-content: center;
+   margin:0 auto;
+    height:2.3rem;
+    width:6em;
+    background-color:#C7CCC3;
+    color:black;
+    font-size:1.4rem;
+    font-weight: 600;
+    padding:1px;
+    text-decoration: none;
+    
+}
+a{
+    color:black;
+    text-decoration:none;
+}
+
+.button:hover .button{
+    color:#C91E30;
+    background-color: white;
+    text-decoration: underline;
+    opacity:1;
+}
+
