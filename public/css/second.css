@@ -70,8 +70,8 @@ body {
    font-size: 3rem;
    font-family: 'Montserrat';
   
-    animation-name: fade;
-    animation-duration: 1.5s;
+    /* animation-name: fade;
+    animation-duration: 1.5s; */
 }
 .subhead{
     font-size: auto;
@@ -207,3 +207,13 @@ label { margin-right: 10px; }
       display:grid;
       grid-template-columns: 33% 33% 33%;
   }
+  .rec4-row{
+    display:grid;
+    grid-template-columns: 40% 20% 20% 20%;
+  }
+.finalBill{
+    position: relative;
+    z-index: 1;
+
+    background-color: blanchedalmond;
+}
