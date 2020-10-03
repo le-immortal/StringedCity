@@ -6,6 +6,7 @@
     
 body {
     text-align: center;
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,6 +90,16 @@ body {
     
 }
 
+.row-card{
+    display: grid;
+    grid-template-columns: 36% 36%;
+    height: 21rem;
+    /* margin: 0px; */
+    /* align-content: space-between; */
+}
+.col {
+    padding: 0px;
+}
 
 
 * { box-sizing: border-box; }
@@ -135,8 +146,8 @@ body { font-family: sans-serif; }
     width: 300px;
     height: 300px;
     border: 1px  #f1f1f1;
+    
     perspective: 1000px;
-    margin: 20px 20px;
     /* animation-name:  zoomin; */
     animation-duration: 3s;
     opacity:0.9;
@@ -179,7 +190,6 @@ body { font-family: sans-serif; }
 label { margin-right: 10px; }
 
 
-
   .delbutton{
       height:auto;
       width:auto;
@@ -202,62 +212,19 @@ label { margin-right: 10px; }
     background-color: blanchedalmond;
 }
 
+@media screen and (max-width: 500) {
+    .body{
+        background-image: none;
+    }
+    .row-card .flip-card .col {
+      width: 100%;
+      display: grid;
+      margin-bottom: 20px;
+      grid-template-columns: 100%;
 
-.dropbtn {
-    background-color: aliceblue;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.7;
-    width: 50%;
-    transition: width 0.4s ease-in-out;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    
   }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: white;
-    color: black;
-    opacity: 0.9;
-    width: 80%;
-  }
-  
-  #myInput {
-    box-sizing: border-box;
-    background-image: url('searchicon.png');
-    background-position: 14px 12px;
-    background-repeat: no-repeat;
-    font-size: 16px;
-    padding: 14px 20px 12px 45px;
-    border: none;
-  }
-  
-  #myInput:focus {outline: 3px solid #ddd;}
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-align-self: center;
-align-content: center;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:whitesmoke;
-    width: 80%;
-    opacity: 0.5;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    background: none;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .show {display:block;}

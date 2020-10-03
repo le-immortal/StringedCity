@@ -15,118 +15,33 @@
         <div class="heading">
             <h1 style="color:#c91e30">SP<i class="fas fa-rocket"></i></i>CE ZONE</h1>
         </div>
-    </div>
-    <!-- <div class="row">
-        <div class="col">
-
-        </div>
-        <div class="col">
-            <div class="row-card">
-                <div class="col">
-                    <div class="scene">
-                        <div class="cube" id="cube1">
-                            <div class="cube__face cube__face--front">
-                                Game Name
-                                </div>
-                            <div class="cube__face cube__face--right">
-                              Description
-                            </div>
-                            <div class="cube__face cube__face--left">
-                            <span class="cube_heading">
-                                No. oF Player and Cost
-                                <div class="button"></div>
-                            </span>  
-
-                            </div>
-                        </div>
-                        <p class="radio-group" id ="rg1">
-                            <label>
-                              <input type="radio" name="rg1" value="front" checked /> Game
-                            </label>
-                            <label>
-                                <input type="radio" name="rg1" value="left" /> Cost
-                              </label>
-                              <br>
-                            <label>
-                              <input type="radio" name="rg1" value="right" /> Description
-                            </label>
-                            </p>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="scene">
-                        <div class="cube" id="cube2">
-                          <div class="cube__face cube__face--front">front</div>
-                          <div class="cube__face cube__face--right">right</div>
-                          <div class="cube__face cube__face--left">left</div>
-                        </div>
-                        <p class="radio-group" id="rg2">
-                            <label>
-                              <input type="radio" name="rg2" value="front" checked /> Game
-                            </label>
-                            <label>
-                              <input type="radio" name="rg2" value="right" /> Cost
-                            </label>
-                            <br>
-                            <label>
-                              <input type="radio" name="rg2" value="left" /> Descriptions
-                            </label>
-                            </p>
-                      </div>
-                </div>
-            </div>  
-            <div class="row-card">
-                <div class="col">
-                    <div class="scene">
-                        <div class="cube">
-                          <div class="cube__face cube__face--front">front</div>
-                          <div class="cube__face cube__face--right">right</div>
-                          <div class="cube__face cube__face--left">left</div>
-                        </div>
-                        <p class="radio-group">
-                            <label>
-                              <input type="radio" name="rotate-cube-side" value="front" checked /> front
-                            </label>
-                            <label>
-                              <input type="radio" name="rotate-cube-side" value="right" /> right
-                            </label>
-                            <label>
-                              <input type="radio" name="rotate-cube-side" value="left" /> left
-                            </label>
-                            </p>
-                      </div> 
-                </div>
-                <div class="col">
-                    <div class="scene">
-                        <div class="cube">
-                          <div class="cube__face cube__face--front">front</div>
-                          <div class="cube__face cube__face--right">right</div>
-                          <div class="cube__face cube__face--left">left</div>
-                        </div>
-                        <p class="radio-group">
-                            <label>
-                              <input type="radio" name="rotate-cube-side" value="front" checked /> front
-                            </label>
-                            <label>
-                              <input type="radio" name="rotate-cube-side" value="right" /> right
-                            </label>
-                            <label>
-                              <input type="radio" name="rotate-cube-side" value="left" /> left
-                            </label>
-                            </p>    
-                      </div>
-                </div>  
+        <div class="dropdown">
+            <input type="text" placeholder="Search.." class="dropbtn" id="myInput" onkeyup="filterFunction()">
+            <div id="myDropdown" class="dropdown-content">
+              <a >Against Us</a>
+              <a >MoonBall</a>
+              <a >Space Dunk</a>
+              <a >GT-Space</a>
+              <a >Alien Shooter</a>
+              <a >Corona in Space</a>
+              <a >Galac-C</a>
+              <a >BlackHole</a>
+              <a >MeteorShroom</a>
+              <a >Planet vs Zombies</a>
+              <a href="">AstroMind</a>
+              <a href="">Space Cricket</a>
             </div>
-        </div>
-    </div> -->
+          </div> 
+    </div>
     <div class="row">
         <div class="col">
             <div class="receipt-card">
                 <span class="subhead" style="top: 20px;">Curate Your GAMING LIST</span><br>
             </div>
+            
         </div>
         <div class="col">
-            <div class="row-card">
+            <div class="row">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -173,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row-card">
+            <div class="row">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -227,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row-card">
+            <div class="row">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -276,11 +191,174 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="public/images/pubg.png" alt="Pubg"
+                                style="background-size: cover; width: 300px; height: 300px;"
+                                style="width:300px;height:300px;">
+                            <span style="position: absolute;
+                            font-weight: bolder;
+                            font-size: x-large;
+                            color: #f2a365;
+                            opacity: 0.9;
+                            /* font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; */
+                            top: 80%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);">GALAC-C</span>
+                        </div>
+                        <div class="flip-card-back" id="GALAC-C">
+                            <h3 style="margin: 20px 20px;">Team up with your Friends and shoot down your Enemies</h3>
+  
+  
+                            <p class="cost"> Cost per LightYear : 90 asteroids</p>
+                            <div class="button"> Play Now! </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="public/images/blackhole.jpeg" alt="BlackHole" style="width:300px;height:300px;">
+                            <span style="position: absolute;
+                            font-weight: bolder;
+                            font-size: larger;
+                            color: #fd7014;
+                            top: 60%;
+                            left: 80%;
+                            transform: translate(-50%, -50%);">BlackHole</span> </div>
+                        <div class="flip-card-back" id="BlackHole">
+                            <h3 style="margin: 20px 20px;">Learn how Earth got destroyed with this game.</h3>
+  
+  
+                            <p class="cost"> Cost per LightYear : 400 asteroids</p>
+                            <div class="button"> Save thy Earth!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="public/images/shroom.jpg" alt="MeteorShroom"
+                                style="background-size: cover; width: 300px; height: 300px;"
+                                style="width:300px;height:300px;">
+                            <span style="position: absolute;
+                            font-weight: bolder;
+                            font-size: x-large;
+                            color: cyan;
+                            opacity: 0.9;
+                            /* font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; */
+                            top: 90%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);">MeteorShroom</span>
+                        </div>
+                        <div class="flip-card-back" id="MeteorShroom">
+                            <h3 style="margin: 20px 20px;">Colonize other planets and grow your mushrooms there.</h3>
+  
+  
+                            <p class="cost"> Cost per LightYear : 60 asteroids</p>
+                            <div class="button"> Buy it Now! </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="public/images/zobies.jpg" alt="Zombie" style="width:300px;height:300px;">
+                            <span style="position: absolute;
+                            font-weight: bolder;
+                            font-size: larger;
+                            color: #fff;
+                            top: 75%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);">Planet vs Zombies</span> </div>
+                        <div class="flip-card-back" id="Planet vs Zombies">
+                            <h3 style="margin: 20px 20px;">Zombies are all over the Planet and it's upto you to save it.
+                            </h3>
+  
+  
+                            <p class="cost"> Cost per LightYear : 350 asteroids</p>
+                            <div class="button"> Beat Zombies!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="public/images/mind.jpg" alt="Mind"
+                                style="background-size: cover; width: 300px; height: 300px;"
+                                style="width:300px;height:300px;">
+                            <span style="position: absolute;
+                            font-weight: bolder;
+                            font-size: x-large;
+                            color: #f2a365;
+                            opacity: 0.9;
+                            /* font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; */
+                            top: 80%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);">AstroMind</span>
+                        </div>
+                        <div class="flip-card-back" id="AstroMind">
+                            <h3 style="margin: 20px 20px;">Find what goes on in an Astronaut's Mind</h3>
+  
+  
+                            <p class="cost"> Cost per LightYear : 150 asteroids</p>
+                            <div class="button"> Find Out! </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="public/images/cricket.jpg" alt="Cricket" style="width:300px;height:300px;">
+                            <span style="position: absolute;
+                            font-weight: bolder;
+                            font-size: larger;
+                            color: #fd7014;
+                            top: 60%;
+                            left: 80%;
+                            transform: translate(-50%, -50%);">Space Cricket</span> </div>
+                        <div class="flip-card-back" id="Space Cricket">
+                            <h3 style="margin: 20px 20px;">Find your bat and hit sixes in the huge space </h3>
+  
+  
+                            <p class="cost"> Cost per LightYear : 400 asteroids</p>
+                            <div class="button"> Hit it!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/b5377164ab.js" crossorigin="anonymous"></script>
 
     <script src="public/js/second.js"></script>
+    <script>
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+} 
+    </script>
 </body>
 
 </html>
