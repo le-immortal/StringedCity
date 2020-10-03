@@ -122,7 +122,7 @@
     <div class="row">
         <div class="col">
             <div class="receipt-card">
-                <span class="subhead" style="top: 20px;">Curate Your GAMING LIST</span>
+                <span class="subhead" style="top: 20px;">Curate Your GAMING LIST</span><br>
             </div>
         </div>
         <div class="col">
@@ -134,19 +134,18 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: larger;
-                            color: #801336;
-                            font-family: Impact, Charcoal, sans-serif;
+                            color: black;
+                            opacity:0.7;
+                            /* font-family: Impact, Charcoal, sans-serif; */
                             top: 80%;
                             left: 50%;
                             transform: translate(-50%, -50%);">Against Us</span>
                         </div>
-                        <div class="flip-card-back">
-                            <h4 style="margin: 20px 20px;">Find the IMPOSTOR who is Against Us</h4>
+                        <div class="flip-card-back"id="Against Us">
+                            <h3 style="margin: 20px 20px;">Find the IMPOSTOR who is Against Us</h3>
 
-                            <p><label style="margin: 20px 20px;" for="quantity">CrewMates Playing: </label><br>
-                                <input style="margin: 20px 50px; width: 40%;" type="number" id="quantity"
-                                    name="quantity" min="1" max="10"></p>
-                            <p> Cost per Head : 50 asteroids</p>
+                           
+                            <p class="cost"> Cost per hour : 50 asteroids</p>
                             <div class="button"> PLAY!!!</div>
                         </div>
                     </div>
@@ -154,22 +153,21 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="public/images/football.jpg    " alt="MoonBall" style="width:300px;height:300px;">
+                            <img src="public/images/space_football.jpg    " alt="MoonBall" style="width:300px;height:300px;">
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: larger;
                             color: #dbd8e3;
+                            color: white;
+                            opacity:0.9;
                             top: 80%;
                             left: 50%;
                             transform: translate(-50%, -50%);">MoonBall</span> </div>
-                        <div class="flip-card-back">
-                            <h4 style="margin: 20px 20px;">Kick the Moon across the galaxy and beat your friends</h4>
+                        <div class="flip-card-back" id="MoonBall">
+                            <h3 style="margin: 20px 20px;">Kick the Moon across the galaxy and beat your friends</h3>
 
-                            <p><label style="margin: 20px 20px;" for="quantity">MoonBallers Playing: </label><br>
-
-                                <input style="margin: 20px 50px; width: 40%;" type="number" id="quantity"
-                                    name="quantity" min="1" max="11"></p>
-                            <p> Cost per Head : 100 asteroids</p>
+                        
+                            <p class="cost"> Cost per hour : 100 asteroids</p>
                             <div class="button"> Kick'em</div>
                         </div>
                     </div>
@@ -185,19 +183,17 @@
                             font-weight: bolder;
                             font-size: larger;
                             color: #ffbd69;
-                            font-family: OCR A Std, monospace;
+                            
+                            opacity:0.9;
+                            /* font-family: OCR A Std, monospace; */
                             top: 80%;
                             left: 50%;
-                            transform: translate(-50%, -50%);">Basket Boot</span>
+                            transform: translate(-50%, -50%);">Space Dunk</span>
                         </div>
-                        <div class="flip-card-back">
-                            <h4 style="margin: 20px 20px;">Basket the Meteor in BlackHole and save  universe</h4>
+                        <div class="flip-card-back" id="Space Dunk">
+                            <h3 style="margin: 20px 20px;">Basket the Meteor in BlackHole and save  universe</h3>
 
-                            <p><label style="margin: 20px 20px;" for="quantity"> Players: </label><br>
-
-                                <input style="margin: 20px 50px; width: 40%;" type="number" id="quantity"
-                                    name="quantity" min="1" max="10"></p>
-                            <p> Cost per Head : 70 asteroids</p>
+                            <p class="cost"> Cost per hour : 70 asteroids</p>
                             <div class="button"> SHOOT!</div>
                         </div>
                     </div>
@@ -208,16 +204,24 @@
                             <img src="public/images/gta.jpg "
                                 style="background-size: cover; width: 300px; height: 300px; image-rendering: auto;"
                                 alt="GTS" style="width:300px;height:300px;">
+                                <span style="position: absolute;
+                            font-weight: bolder;
+                            font-size: larger;
+                            color: #ffbd69;
+                            
+                            opacity:0.9;
+                            /* font-family: OCR A Std, monospace; */
+                            top: 80%;
+                            left: 50%;
+                            visibility: hidden;
+                            transform: translate(-50%, -50%);">GTA Space</span>
+                                
 
                         </div>
-                        <div class="flip-card-back">
-                            <h4 style="margin: 20px 20px;">Find your Homies in space in this new edition</h4>
+                        <div class="flip-card-back"id="GTA Space">
+                            <h3 style="margin: 20px 20px;">Find your Homies in space in this new edition</h3>
 
-                            <p><label style="margin: 20px 20px;" for="quantity">Homies Playing: </label><br>
-
-                                <input style="margin: 20px 50px; width: 40%;" type="number" id="quantity"
-                                    name="quantity" min="1" max="8"></p>
-                            <p> Buy in : 8000 asteroids</p>
+                            <p class="cost"> Cost per hour : 250 asteroids</p>
                             <div class="button"> Buy The Game!!!</div>
                         </div>
                     </div>
@@ -234,19 +238,19 @@
                             font-weight: bolder;
                             font-size: larger;
                             color: #343434;
-                            font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-                            top: 30%;
-                            left: 20%;
-                            transform: translate(-50%, -50%);">Alien <br> Shooter</span>
+                            color:white;
+                            /* color: white; */
+                            opacity: 0.9;
+                            /* font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; */
+                            top: 80%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);">Alien  Shooter</span>
                         </div>
-                        <div class="flip-card-back">
-                            <h4 style="margin: 20px 20px;">Save your new universe from Aliens.</h4>
+                        <div class="flip-card-back"id="Alien  Shooter">
+                            <h3 style="margin: 20px 20px;">Save your new universe from Aliens.</h3>
 
-                            <p><label style="margin: 20px 20px;" for="quantity">Saviours : </label><br>
-
-                                <input style="margin: 20px 50px; width: 40%;" type="number" id="quantity"
-                                    name="quantity" min="1" max="7"></p>
-                            <p> Cost per Head : 100 asteroids</p>
+                         
+                            <p class="cost"> Cost per hour : 100 asteroids</p>
                             <div class="button"> Buy it Now </div>
                         </div>
                     </div>
@@ -262,14 +266,11 @@
                             top: 30%;
                             left: 50%;
                             transform: translate(-50%, -50%);">Corona in Space</span> </div>
-                        <div class="flip-card-back">
-                            <h4 style="margin: 20px 20px;">Corona has infiltrated Space too. Wipe it Out</h4>
+                        <div class="flip-card-back" id="Corona in Space">
+                            <h3 style="margin: 20px 20px;">Corona has infiltrated Space too. Wipe it Out</h3>
 
-                            <p><label style="margin: 20px 20px;" for="quantity">Warriors Playing: </label><br>
-
-                                <input style="margin: 20px 50px; width: 40%;" type="number" id="quantity"
-                                    name="quantity" min="1" max="10"></p>
-                            <p> Cost per Head : 700 asteroids</p>
+                        
+                            <p class="cost"> Cost per hour : 700 asteroids</p>
                             <div class="button"> Wipe'em Out!</div>
                         </div>
                     </div>
