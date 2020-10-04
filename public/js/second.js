@@ -297,10 +297,18 @@ function filterFunction(e) {
       }
       if(c==a.length-1)
       {
+        function sel(){
+          document.getElementById("myInput").select();
+          console.log("now i got selected");
 
+        }
         document.getElementById("myInput").value=a[i].textContent;
+        document.getElementById("myInput").blur();
+        setTimeout(sel,3500);
+       
+        
         // console.log("mai hua kya");
-        document.getElementById("myInput").select();
+        // document.getElementById("myInput").select();
  
 
         // for(let j=0;j<a.length;j++)
