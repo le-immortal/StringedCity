@@ -253,6 +253,13 @@ for (let i = 0; i < buttons.length; i++) {
 function myFunction() {
   document.getElementById("myInput").select();
   document.getElementById("myDropdown").classList.toggle("show");
+  // console.log("i got clicked");
+  // if(click==1)
+  // {
+  //   document.getElementById("myDropdown").classList.toggle("show");
+  //   click=0;
+
+  // }
 }
 
 function filterFunction(e) {
@@ -314,15 +321,16 @@ function filterFunction(e) {
   }
 } 
 
-let dropdowns=document.querySelectorAll('#myDropdown a');
-for(let i=0;i<dropdowns.length;i++)
-{
-  // console.log("kuch bhi hua kya");
-  dropdowns[i].addEventListener("click",function(){
+// let dropdowns=document.querySelectorAll('#myDropdown a');
+// for(let i=0;i<dropdowns.length;i++)
+// {
+//   // console.log("kuch bhi hua kya");
+//   dropdowns[i].addEventListener("click",function(){
     
-    // myFunction();
-  });
-}
+//     myFunction();
+//     var click=1;
+//   });
+// }
 
 search=document.getElementById("search");
 search.addEventListener("click",function(){
