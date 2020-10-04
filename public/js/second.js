@@ -5,10 +5,10 @@ games = document.querySelectorAll(".flip-card-front span");
 
 var info = [];
 for (game of games) {
-  console.log(game.innerHTML);
+  // console.log(game.innerHTML);
   details = document.getElementById(game.innerHTML);
   let x = details.childNodes[3].innerHTML;
-  console.log(details.childNodes);
+  // console.log(details.childNodes);
   cost = x.split(':')[1];
   let gamebox = {
     name: game.innerHTML,
@@ -18,7 +18,7 @@ for (game of games) {
 
 
 }
-console.log(info);
+// console.log(info);
 let myItems = [];
 
 function createMenuItem(name) {
@@ -26,7 +26,7 @@ function createMenuItem(name) {
   let div = document.createElement('div');
   // div.className+="bill-items";
   let array = name.split('.');
-  console.log(array);
+  // console.log(array);
 
   if (count == 0) {
     var d = new Date();
@@ -35,7 +35,8 @@ function createMenuItem(name) {
     var day = d.getDate();
     var buy_date = day + "/" + month + "/" + year;
 
-    console.log(buy_date);
+    // console.log(buy_date);
+
 
     let span = document.createElement('div');
     let billid = document.createElement('div');
@@ -96,7 +97,7 @@ function createMenuItem(name) {
       }
       console.log(finalfinalbill);
       // this.parentElement.removeChild(div);
-      console.log(this.parentElement);
+      // console.log(this.parentElement);
       var rows = this.parentElement.getElementsByClassName("rec-row");
       while (rows.length > 0) {
         rows[0].parentElement.removeChild(rows[0]);
@@ -118,7 +119,7 @@ function createMenuItem(name) {
       bill.appendChild(dev);
       let he = document.createElement('hr');
       bill.appendChild(he);
-      console.log("here");
+      // console.log("here");
       let tot_totpri=0
       for (finalitem of finalfinalbill) {
         finaldiv = document.createElement('div');
@@ -177,7 +178,7 @@ function createMenuItem(name) {
 
 
     });
-    console.log("there");
+    // console.log("there");
     let no = Math.floor(Math.random() * 999999999 + 12345);
     span.textContent = buy_date;
     billid.textContent = "\n Bill id:" + no;
@@ -231,13 +232,13 @@ var count = 0;
 var bill = document.getElementsByClassName("receipt-card")[0];
 var buttons = document.querySelectorAll(".button")
 for (let i = 0; i < buttons.length; i++) {
-  console.log(buttons[i].innerHTML);
+  // console.log(buttons[i].innerHTML);
   buttons[i].addEventListener("click", function () {
-    console.log(buttons[i].parentElement.id);
+    // console.log(buttons[i].parentElement.id);
     let name = buttons[i].parentElement.id;
     for (var j = 0; j < info.length; j++) {
       if (info[j].name == name) {
-        console.log(info[j].price);
+        // console.log(info[j].price);
         myItems.push(info[j]);
 
         break;
@@ -265,7 +266,7 @@ function myFunction() {
 function filterFunction(e) {
   if(e==MouseEvent)
   {
-    console.log("ya its me");
+    // console.log("ya its me");
   }
  if(e.keyCode==13)
  {
@@ -297,14 +298,19 @@ function filterFunction(e) {
       }
       if(c==a.length-1)
       {
-        function sel(){
-          document.getElementById("myInput").select();
-          console.log("now i got selected");
+       
+      
+          // console.log("now i got selected");
 
-        }
-        document.getElementById("myInput").value=a[i].textContent;
-        document.getElementById("myInput").blur();
-        setTimeout(sel,3500);
+       
+        // document.getElementById("myInput").value=a[i].textContent;
+
+        // document.getElementById("myInput").select();
+        var g_name=a[i].textContent;
+
+  
+       
+       
        
         
         // console.log("mai hua kya");
@@ -341,11 +347,24 @@ function filterFunction(e) {
 // }
 
 search=document.getElementById("search");
-search.addEventListener("click",function(){
-  let game_name=document.getElementById("myInput").value;
-  let ref="#"+game_name;
+console.log(search);
+document.getElementById("search").addEventListener("click",function(){
+  // let game_name=document.getElementById("myInput").value;
+  const links=document.querySelectorAll("#myDropdown a");
+  console.log("hey");
+  for(i of links)
+  {
+    if(i.style.display!="none")
+    {
+      g_name=i.textContent;
+      break;
+    }
+  }
+
+  let ref="#"+g_name;
+  console.log(g_name);
   this.setAttribute("href",ref);
-  const ele=document.getElementById(game_name);
+  const ele=document.getElementById(g_name);
   const flipCard=ele.parentElement.parentElement;
   flipCard.style.borderStyle="solid";
   flipCard.style.borderColor="#25FFFF";
