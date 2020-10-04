@@ -6,7 +6,10 @@ html{
   scroll-behavior: smooth;
 }
 
-    
+a{
+  text-decoration: none;
+}
+
 body {
     text-align: center;
     background-attachment: fixed;
