@@ -1,11 +1,9 @@
 
-
-
 //bill logic
 
 games = document.querySelectorAll(".flip-card-front span");
 
-let info = [];
+var info = [];
 for (game of games) {
   console.log(game.innerHTML);
   details = document.getElementById(game.innerHTML);
@@ -165,7 +163,13 @@ function createMenuItem(name) {
       bill.appendChild(finaldiv);
       bill.style.backgroundColor="white";
       bill.style.color="black";
+      thanks_text=document.createElement('span');
+      thanks_text.textContent="Enjoy your time at the Space Zone !";
+      thanks_text.style.color="black";
+      thanks_text.fontSize="20px";
+      bill.appendChild(thanks_text);
 
+      bill.style.height="auto";
 
 
 
@@ -244,6 +248,119 @@ for (let i = 0; i < buttons.length; i++) {
 
   });
 }
+
+
+function myFunction() {
+  document.getElementById("myInput").select();
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction(e) {
+  if(e==MouseEvent)
+  {
+    console.log("ya its me");
+  }
+ if(e.keyCode==13)
+ {
+   document.getElementById("search").click();
+   e.preventDefault();
+ }
+  
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+
+  for (let i = 0; i < a.length; i++) {
+      
+  
+    txtValue = a[i].textContent ;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+      // console.log("out");
+      let c=0;
+      for(let j=0;j<a.length;j++)
+      {
+        // console.log("check");
+        if(a[j].style.display=="none")
+        {
+          c++;
+        }
+      }
+      if(c==a.length-1)
+      {
+
+        document.getElementById("myInput").value=a[i].textContent;
+        // console.log("mai hua kya");
+        document.getElementById("myInput").select();
+ 
+
+        // for(let j=0;j<a.length;j++)
+        // {
+         
+        //   a[j].style.display=="visible";
+          
+        // }
+        
+        
+      }
+
+    } else {
+      // console.log("hey");
+      a[i].style.display = "none";
+    }
+    // console.log("if ke bahaar");
+  }
+} 
+
+let dropdowns=document.querySelectorAll('#myDropdown a');
+for(let i=0;i<dropdowns.length;i++)
+{
+  // console.log("kuch bhi hua kya");
+  dropdowns[i].addEventListener("click",function(){
+    
+    // myFunction();
+  });
+}
+
+search=document.getElementById("search");
+search.addEventListener("click",function(){
+  let game_name=document.getElementById("myInput").value;
+  let ref="#"+game_name;
+  this.setAttribute("href",ref);
+  const ele=document.getElementById(game_name);
+  const flipCard=ele.parentElement.parentElement;
+  flipCard.style.borderStyle="solid";
+  flipCard.style.borderColor="#25FFFF";
+  flipCard.style.fontSize="20px";
+  
+
+
+  flipCard.style.opacity=1;
+  
+  flipCard.style.color="pink";
+  function print(){
+    // console.log('chal jaa bro');
+    flipCard.style.borderStyle="";
+  flipCard.style.borderColor="";
+  flipCard.style.opacity=0.8;
+  }
+  // document.getElementById("myInput").select();
+  setTimeout(print,3000);
+
+  
+  
+
+  // border-style:dashed;
+  // border-color: white;
+  // border-radius: 2%;
+  
+  
+
+
+})
+
 
 
 

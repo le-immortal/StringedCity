@@ -89,6 +89,13 @@ body {
     
 }
 
+.row-card{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: auto;
+  margin-bottom: 20px 20px;
+  
+}
 
 
 * { box-sizing: border-box; }
@@ -139,7 +146,7 @@ body { font-family: sans-serif; }
     margin: 20px 20px;
     /* animation-name:  zoomin; */
     animation-duration: 3s;
-    opacity:0.9;
+    opacity:0.8;
   }
 
 .flip-card-inner {
@@ -163,8 +170,7 @@ body { font-family: sans-serif; }
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: #bbb; 
 }
 
 .flip-card-back {
@@ -230,6 +236,7 @@ label { margin-right: 10px; }
     font-size: 16px;
     padding: 14px 20px 12px 45px;
     border: none;
+    
   }
   
   #myInput:focus {outline: 3px solid #ddd;}
@@ -249,16 +256,54 @@ align-content: center;
     width: 80%;
     opacity: 0.5;
     z-index: 1;
+    left:5.5rem;
+    visibility: ;
   }
   
   .dropdown-content a {
     color: black;
+    opacity: 0.7;
     background: none;
     padding: 12px 16px;
     text-decoration: none;  
     display: block;
+    
   }
   
   .dropdown-content a:hover {background-color: #f1f1f1}
   
   .show {display:block;}
+
+
+  @media (max-width:800px){
+    h1{
+      font-size: 20px;
+    }
+    .row{
+      grid-template-columns: 100%;
+      
+    }
+    .row-card{
+      grid-template-columns: 100%;
+    }
+    .receipt-card{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .flip-card{
+      margin-left:auto;
+      margin-right: auto;
+      margin-top: 3rem;
+    }
+
+  }
+  @media (min-width: 800px) and (max-width: 1200px){
+    .row-card{
+      grid-template-columns: 100%;
+    }
+  }
+
+
+
+  
+  

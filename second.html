@@ -16,20 +16,20 @@
             <h1 style="color:#c91e30">SP<i class="fas fa-rocket"></i></i>CE ZONE</h1>
         </div>
         <div class="dropdown">
-            <input type="text" placeholder="Search.." onfocus="myFunction()" onfocusout="myFunction()" class="dropbtn" id="myInput" onkeyup="filterFunction()">
+            <input type="text" placeholder="Search.." onfocus="myFunction()" onfocusout="myFunction()"  class="dropbtn" id="myInput" onkeyup="filterFunction(event)"><a href="" class="button" id="search">Search</a>
             <div id="myDropdown" class="dropdown-content">
-              <a >Against Us</a>
-              <a >MoonBall</a>
-              <a >Space Dunk</a>
-              <a >GT-Space</a>
-              <a >Alien Shooter</a>
-              <a >Corona in Space</a>
-              <a >Galac-C</a>
-              <a >BlackHole</a>
-              <a >MeteorShroom</a>
-              <a >Planet vs Zombies</a>
-              <a href="">AstroMind</a>
-              <a href="">Space Cricket</a>
+              <a href="#Against Us">Against Us</a>
+              <a href="#MoonBall">MoonBall</a> 
+              <a href="#Space Dunk" >Space Dunk</a>
+              <a href="#GTA Space" >GTA Space</a>
+              <a href="#Alien Shooter">Alien Shooter</a>
+              <a href="#Corona in Space">Corona in Space</a>
+              <a href="#Galac-C">Galac-C</a>
+              <a href="#BlackHole">BlackHole</a>
+              <a href="#MeteroShroom">MeteorShroom</a>
+              <a href="#Planet vs Zombies">Planet vs Zombies</a>
+              <a href="#AstroMind">AstroMind</a>
+              <a href="#Space Cricket">Space Cricket</a>
             </div>
           </div> 
     </div>
@@ -41,7 +41,7 @@
             
         </div>
         <div class="col">
-            <div class="row">
+            <div class="row-card">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -56,7 +56,7 @@
                             left: 50%;
                             transform: translate(-50%, -50%);">Against Us</span>
                         </div>
-                        <div class="flip-card-back"id="Against Us">
+                        <div class="flip-card-back"id="Against Us"name="Against Us">
                             <h3 style="margin: 20px 20px;">Find the IMPOSTOR who is Against Us</h3>
 
                            
@@ -72,13 +72,12 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: larger;
-                            color: #dbd8e3;
                             color: white;
                             opacity:0.9;
                             top: 80%;
                             left: 50%;
                             transform: translate(-50%, -50%);">MoonBall</span> </div>
-                        <div class="flip-card-back" id="MoonBall">
+                        <div class="flip-card-back" id="MoonBall" name="MoonBall">
                             <h3 style="margin: 20px 20px;">Kick the Moon across the galaxy and beat your friends</h3>
 
                         
@@ -88,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row-card">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -97,7 +96,7 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: larger;
-                            color: #ffbd69;
+                            color: #fff;
                             
                             opacity:0.9;
                             /* font-family: OCR A Std, monospace; */
@@ -122,13 +121,13 @@
                                 <span style="position: absolute;
                             font-weight: bolder;
                             font-size: larger;
-                            color: #ffbd69;
+                            color: #fff;
                             
                             opacity:0.9;
                             /* font-family: OCR A Std, monospace; */
-                            top: 80%;
+                            top: 90%;
                             left: 50%;
-                            visibility: hidden;
+                        
                             transform: translate(-50%, -50%);">GTA Space</span>
                                 
 
@@ -142,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row-card">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -152,16 +151,15 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: larger;
-                            color: #343434;
                             color:white;
                             /* color: white; */
                             opacity: 0.9;
                             /* font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; */
                             top: 80%;
                             left: 50%;
-                            transform: translate(-50%, -50%);">Alien  Shooter</span>
+                            transform: translate(-50%, -50%);">Alien Shooter</span>
                         </div>
-                        <div class="flip-card-back"id="Alien  Shooter">
+                        <div class="flip-card-back"id="Alien Shooter">
                             <h3 style="margin: 20px 20px;">Save your new universe from Aliens.</h3>
 
                          
@@ -177,8 +175,8 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: larger;
-                            color: #090030;
-                            top: 30%;
+                            color: #fff;
+                            top: 80%;
                             left: 50%;
                             transform: translate(-50%, -50%);">Corona in Space</span> </div>
                         <div class="flip-card-back" id="Corona in Space">
@@ -191,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row-card">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -201,14 +199,14 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: x-large;
-                            color: #f2a365;
+                            color: #fff;
                             opacity: 0.9;
                             /* font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; */
                             top: 80%;
                             left: 50%;
-                            transform: translate(-50%, -50%);">GALAC-C</span>
+                            transform: translate(-50%, -50%);">Galac-C</span>
                         </div>
-                        <div class="flip-card-back" id="GALAC-C">
+                        <div class="flip-card-back" id="Galac-C">
                             <h3 style="margin: 20px 20px;">Team up with your Friends and shoot down your Enemies</h3>
   
   
@@ -224,9 +222,9 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: larger;
-                            color: #fd7014;
-                            top: 60%;
-                            left: 80%;
+                            color: #fff;
+                            top: 80%;
+                            left: 50%;
                             transform: translate(-50%, -50%);">BlackHole</span> </div>
                         <div class="flip-card-back" id="BlackHole">
                             <h3 style="margin: 20px 20px;">Learn how Earth got destroyed with this game.</h3>
@@ -238,7 +236,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row-card">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -248,7 +246,7 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: x-large;
-                            color: cyan;
+                            color: #fff;
                             opacity: 0.9;
                             /* font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; */
                             top: 90%;
@@ -272,7 +270,7 @@
                             font-weight: bolder;
                             font-size: larger;
                             color: #fff;
-                            top: 75%;
+                            top: 80%;
                             left: 50%;
                             transform: translate(-50%, -50%);">Planet vs Zombies</span> </div>
                         <div class="flip-card-back" id="Planet vs Zombies">
@@ -286,7 +284,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row-card">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -296,11 +294,12 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: x-large;
-                            color: #f2a365;
+                            color: #000;
                             opacity: 0.9;
                             /* font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; */
-                            top: 80%;
+                            top: 85%;
                             left: 50%;
+                            font-weight: 700;
                             transform: translate(-50%, -50%);">AstroMind</span>
                         </div>
                         <div class="flip-card-back" id="AstroMind">
@@ -319,9 +318,9 @@
                             <span style="position: absolute;
                             font-weight: bolder;
                             font-size: larger;
-                            color: #fd7014;
-                            top: 60%;
-                            left: 80%;
+                            color: #fff;
+                            top: 80%;
+                            left: 60%;
                             transform: translate(-50%, -50%);">Space Cricket</span> </div>
                         <div class="flip-card-back" id="Space Cricket">
                             <h3 style="margin: 20px 20px;">Find your bat and hit sixes in the huge space </h3>
@@ -338,27 +337,7 @@
     <script src="https://kit.fontawesome.com/b5377164ab.js" crossorigin="anonymous"></script>
 
     <script src="public/js/second.js"></script>
-    <script>
-        function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-} 
-    </script>
+    
 </body>
 
 </html>

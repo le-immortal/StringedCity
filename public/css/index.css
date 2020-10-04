@@ -101,6 +101,7 @@ body {
     border-color: white;
     border-radius: 2%;
     padding: 2px;
+    
    
 }
 
@@ -166,4 +167,38 @@ a{
     text-decoration: underline;
     opacity:1;
 }
+
+@media (max-width:800px){
+ .col{
+    display:block;
+    height:50%;
+    width:70%;
+   
+    
+
+ }
+ .row{
+     display: block;
+      height:50%;
+     width:100%; 
+     margin:auto;
+  
+     
+ }
+ .rocket{
+     display:none;
+     }
+     .card{
+         display: block;
+        /* width:100%; */
+        /* height:20%; */
+         display:block;
+         /* margin: auto; */
+         /* margin-right: auto; */
+         height:50%;
+         width:70%;
+     }
+     
+
+  }
 
