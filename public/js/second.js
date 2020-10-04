@@ -124,8 +124,8 @@ function createMenuItem(name) {
       qty = document.createElement('span');
       tot_pri.textContent="Total Asteroids"
       name.textContent = "Name";
-      price.textContent = "Asteroids";
-      qty.textContent = "LightYear";
+      price.textContent = "Price";
+      qty.textContent = "Light Year";
       dev.appendChild(name);
       dev.appendChild(price);
       dev.appendChild(qty);
