@@ -370,33 +370,33 @@ search.addEventListener("click",function(){
 })
 
 
-a = document.querySelectorAll('a');
-for(i of a){
-  console.log(i.textContent);
-i.addEventListener('click', function(){
-  console.log('hua kya add');
-  game_name = this.textContent;
-  const ele=document.getElementById(game_name);
-  var slide_to="#"+game_name;
-  this.setAttribute("href",slide_to);
-  const flipCard=ele.parentElement.parentElement;
-  flipCard.style.borderStyle="solid";
-  flipCard.style.borderColor="#25FFFF";
-  flipCard.style.fontSize="20px";
+// a = document.querySelectorAll('a');
+// for(i of a){
+//   console.log(i.textContent);
+// i.addEventListener('click', function(){
+//   console.log('hua kya add');
+//   game_name = this.textContent;
+//   const ele=document.getElementById(game_name);
+//   var slide_to="#"+game_name;
+//   this.setAttribute("href",slide_to);
+//   const flipCard=ele.parentElement.parentElement;
+//   flipCard.style.borderStyle="solid";
+//   flipCard.style.borderColor="#25FFFF";
+//   flipCard.style.fontSize="20px";
   
 
 
-  flipCard.style.opacity=1;
+//   flipCard.style.opacity=1;
   
-  flipCard.style.color="pink";
-  function print(){
-    // console.log('chal jaa bro');
-    flipCard.style.borderStyle="";
-  flipCard.style.borderColor="";
-  flipCard.style.opacity=0.8;
-  }
-  // document.getElementById("myInput").select();
-  setTimeout(print,3000);
+//   flipCard.style.color="pink";
+//   function print(){
+//     // console.log('chal jaa bro');
+//     flipCard.style.borderStyle="";
+//   flipCard.style.borderColor="";
+//   flipCard.style.opacity=0.8;
+//   }
+//   // document.getElementById("myInput").select();
+//   setTimeout(print,3000);
 
-})
-}
+// })
+// }
