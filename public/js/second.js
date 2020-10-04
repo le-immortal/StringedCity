@@ -377,6 +377,8 @@ i.addEventListener('click', function(){
   console.log('hua kya add');
   game_name = this.textContent;
   const ele=document.getElementById(game_name);
+  var slide_to="#"+game_name;
+  this.setAttribute("href",slide_to);
   const flipCard=ele.parentElement.parentElement;
   flipCard.style.borderStyle="solid";
   flipCard.style.borderColor="#25FFFF";
