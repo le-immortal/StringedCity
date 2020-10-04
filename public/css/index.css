@@ -1,204 +1,195 @@
 *{
     font-family: 'Montserrat';
 }
-
+body{
     
-body {
-  
-    text-align: center;
-    background-size: 100% 170% ;
     background-repeat: no-repeat;
-    background-color: black;
-    }
-    @keyframes fade{
-        0%{
-            opacity:0;
-        }
-       
-        50%{
-            opacity:0;
-        }
-        100%{
-            opacity:1;
-        }
-    }
-    @keyframes grow{
-        0%{
-            height:0;
-        }
-        100%{
-            height:20rem;
-        }
-    }
-
-@keyframes fly{
-    0%{
-        visibility: hidden;
-        display: flex;
-        bottom :100%;
-    }
-    1%{
-        bottom:99%;
-        visibility: visible;
-    }
-  
-  
-   
-    100%{
-        opacity:1;
-        bottom: 0%;
-        display:flex;
-        visibility: visible;  
-      }
+    background-size: 100% 200%;
+    /* background-color: #cccccc; */
 }
 .heading{
-   
-   color:white;
-   
-   font-size: 3rem;
-   font-family: 'Montserrat';
-  
-    animation-name: fade;
-    animation-duration: 3s;
-}
-.subhead{
-    font-size: 2.4rem;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    text-align:center;
 
-}
-
-
-.rocket{
-   
-    visibility: hidden;
-  
-    justify-content: center;
-   
-    position: absolute;
-    bottom:105%;
- 
-    
-   
-    animation-name: fly;
-    animation-duration: 2.5s;
-    bottom:0%;
-    opacity:1;
-    visibility: visible;
-    
-
-    
-   
-   
-}
-
-.card{
-    height:20rem;
-    width:25rem;
+   text-align: center;
     color:white;
-    border-style:dashed;
-    border-color: white;
-    border-radius: 2%;
-    padding: 2px;
     
-   
-}
-
-.row{
-    display:flex;
-    width: 100%;
-    height:25rem;
-    justify-content: center;
-   
-}
-.hint-text{
+    font-size: 3rem;
     font-family: 'Montserrat';
-    font-size:1.4rem;
-    padding: 1rem;
-    text-align: center;
-}
-
-.col{
-    display:flex;
+   
+     animation-name: fade;
+     animation-duration: 3s;
+ }
+ .row{
+    display: grid;
+    grid-template-columns: 35% 15% 15% 35%;
+    height: auto;
+    margin-bottom: 20px 20px;
     
-    width:20%;
+}
+.dottedCard{
+    background-color:black;
+    /* background-color: black; */
+    opacity: 1;
+    /* width: 70%; */
+    /* height: 10rem; */
+    text-align: center;
+    height:100%;
+    border-color: blanchedalmond;
+    border-style: solid;
+    border-radius: 1rem;
+  
+     margin: 0 auto;
+    padding: 20px 20px;
+    color: white;
+    font-size: 22px;
 }
 .solidCard{
-    animation-name:grow ;
-    animation-duration: 2.5s;
-    height:20rem;
-    width:25rem;
-
-    border-style:solid;
-    border-color: white;
-    opacity:0.8;
-    background-color: white;
+    text-align: center;
+    background-color:white;
+    /* background-color: black; */
+    opacity: 1;
+    /* width: 70%; */
+    /* height: 10rem; */
+    height:100%;
+    font-size: 22px;
+    border-color: blanchedalmond;
+    border-style: solid;
+    border-radius: 1rem;
+  
+     margin: 0 auto;
+    padding: 20px 20px;
     color: black;
-    
-    padding:2px;
-    
+    /* font-size: 24px; */
 
 }
-.button{
-    animation-name: fade;
-    animation-duration: 2s;
-    display:flex;
-    justify-content: center;
-    margin:0 auto;
-    height:2.3rem;
-    width:6em;
-    background-color:#C7CCC3;
-    color:black;
-    font-size:1.4rem;
-    font-weight: 600;
-    padding:1px;
+@keyframes fade{
+    0%{
+        opacity:0;
+    }
+   
+  
+    100%{
+        opacity:1;
+    }
+}
+a{
     text-decoration: none;
     
 }
-a{
-    color:black;
-    text-decoration:none;
-}
-
-.button:hover .button{
-    color:#C91E30;
-    background-color: white;
-    text-decoration: underline;
-    opacity:1;
-}
-
-@media (max-width:800px){
- .col{
-    display:block;
-    height:50%;
-    width:70%;
-   
+.button{
     
-
- }
- .row{
-     display: block;
-      height:50%;
-     width:100%; 
-     margin:auto;
-  
-     
- }
- .rocket{
-     display:none;
-     }
-     .card{
-         display: block;
-        /* width:100%; */
-        /* height:20%; */
-         display:block;
-         /* margin: auto; */
-         /* margin-right: auto; */
-         height:50%;
-         width:70%;
-     }
-     
-
+        background-color: black; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+      
+}
+.button:hover {
+    background-color: white;
+    color: black;
+    
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
+  .container{
+      margin:4rem;
+  }
+
+
+
+@media (min-width:0px)
+{
+    .row{
+        grid-template-columns: 100%;
+    }
+    .col{
+        margin-top:2rem;
+      
+
+    }
+    .rocket{
+        display:none;
+        visibility:hidden;
+    }
+  
+    
+}
+@media (min-width:800px)
+{
+    .row{
+        grid-template-columns: 40% 10% 10% 40%;
+    }
+    .col{
+        margin-top:2rem;
+      
+    }
+     .rocket{
+        display:none;
+        visibility: hidden;
+       
+    } 
+  
+    
+}
+@media(min-width:1499px)
+{
+    @keyframes fly{
+        0%{
+            visibility: hidden;
+            
+            bottom :100%;
+        }
+        1%{
+            bottom:99%;
+            visibility: visible;
+        }
+      
+      
+       
+        100%{
+            opacity:1;
+            bottom:3%;
+            
+            visibility: visible;  
+          }
+    }
+    .row{
+        grid-template-columns: 35% 15% 15% 35%;
+    }
+    .col{
+        margin-top:2rem;
+      
+    }
+    .rocket{
+        
+   
+        visibility: hidden;
+      display: flex;
+       align-self: flex-end;
+       
+      
+     
+        position:absolute;
+        right:50%;
+       
+        animation-name: fly;
+        animation-duration: 2.5s;
+       
+        bottom:3%;
+        opacity:1;
+        visibility: visible;
+        
+    
+        
+       
+       
+    }
+    
+}
