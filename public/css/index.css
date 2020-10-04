@@ -2,16 +2,20 @@
     font-family: 'Montserrat';
 }
 body{
-    
+/*     
     background-repeat: no-repeat;
-    background-size: 100% 250%;
+    background-size: 100% 250%; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     /* background-color: #cccccc; */
 }
 .heading{
 
-   text-align: center;
+   text-align: left;
     color:white;
-    
+    margin-left: 20px;
     font-size: 3rem;
     font-family: 'Montserrat';
    
@@ -34,7 +38,7 @@ body{
     text-align: center;
     height:100%;
     border-color: blanchedalmond;
-    border-style: solid;
+    border-style: dashed;
     border-radius: 1rem;
   
      margin: 0 auto;
@@ -92,7 +96,7 @@ a{
       
 }
 .button:hover {
-    background-color:#0178D4;
+    background-color:#929292;
     color: black;
     
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -110,6 +114,7 @@ a{
 }
     
     .heading{
+        text-align: center;
         font-size: 1.5rem;
     }
     .row{
@@ -132,26 +137,130 @@ a{
    
     .heading{
         font-size: 3rem;
+        text-align: left;
     }
     .row{
-        grid-template-columns: 30% 10% 10% 30%;
+        grid-template-columns: 30% 20% 20% 30%;
     }
     .col{
         margin-top:2rem;
       
     }
-     .rocket{
-        display:none;
-        visibility: hidden;
+     
+    @keyframes fly{
+        0%{
+            visibility: hidden;
+            
+            bottom :100%;
+        }
+        1%{
+            bottom:99%;
+            visibility: visible;
+        }
+      
+      
        
-    } 
+        100%{
+            opacity:1;
+            bottom:3%;
+            
+            visibility: visible;  
+          }
+    }
+    .rocket{
+        
+   
+        visibility: hidden;
+      display: flex;
+       align-self: flex-end;
+       
+      
+     
+        position:absolute;
+        right:30%;
+       
+        animation-name: fly;
+        animation-duration: 2.5s;
+       
+        bottom:3%;
+        opacity:1;
+        visibility: visible;
+        
+    
+        
+       
+       
+    }
   
     
+}
+@media(min-width:1350px) {
+
+   
+    .heading{
+        font-size: 3rem;
+        text-align: left;
+
+    }
+    .row{
+        grid-template-columns: 30% 20% 20% 30%;
+    }
+    .col{
+        margin-top:2rem;
+      
+    }
+     
+    @keyframes fly{
+        0%{
+            visibility: hidden;
+            
+            bottom :100%;
+        }
+        1%{
+            bottom:99%;
+            visibility: visible;
+        }
+      
+      
+       
+        100%{
+            opacity:1;
+            bottom:3%;
+            
+            visibility: visible;  
+          }
+    }
+    .rocket{
+        
+   
+        visibility: hidden;
+      display: flex;
+       align-self: flex-end;
+       
+      
+     
+        position:absolute;
+        right:40%;
+       
+        animation-name: fly;
+        animation-duration: 2.5s;
+       
+        bottom:3%;
+        opacity:1;
+        visibility: visible;
+        
+    
+        
+       
+       
+    }
 }
 @media(min-width:1499px)
 {
     .heading{
         font-size: 3rem;
+        text-align: left;
+        
     }
     @keyframes fly{
         0%{
@@ -178,7 +287,10 @@ a{
     }
     .col{
         margin-top:2rem;
-      
+        
+    }
+    .empty{
+        width: auto;
     }
     .rocket{
         

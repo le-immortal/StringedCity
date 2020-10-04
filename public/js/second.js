@@ -1,9 +1,22 @@
 
 //bill logic
 
+document.addEventListener('click', function(event){
+  if(event.target.nodeName != 'INPUT'){
+    // console.log('hu');
+    arr=[];
+    arr=document.getElementById('myDropdown').classList.toString();
+    // console.log(this.id);
+    if(arr.includes('show')){
+      // console.log('ab chalna chahie');
+        document.getElementById('myDropdown').classList.remove('show');
+    }
+  }
+})
+
 games = document.querySelectorAll(".flip-card-front span");
 
-var info = [];
+let info = [];
 for (game of games) {
   // console.log(game.innerHTML);
   details = document.getElementById(game.innerHTML);
@@ -45,7 +58,7 @@ function createMenuItem(name) {
     generate.className += "button";
     generate.style.marginBottom = "30px";
 
-    generate.textContent = "generate";
+    generate.textContent = "Generate Bill";
     generate.id = "generate";
     generate.addEventListener("click", function () {
       this.style.display="none";
@@ -53,6 +66,7 @@ function createMenuItem(name) {
       {
         buttons[k].style.display="none";
       }
+      document.querySelector('#search').style.display="inline-block";
 
       finalbill = [];
       finalnames = [];
@@ -95,7 +109,7 @@ function createMenuItem(name) {
 
 
       }
-      console.log(finalfinalbill);
+      // console.log(finalfinalbill);
       // this.parentElement.removeChild(div);
       // console.log(this.parentElement);
       var rows = this.parentElement.getElementsByClassName("rec-row");
@@ -108,10 +122,10 @@ function createMenuItem(name) {
       name = document.createElement('span');
       price = document.createElement('span');
       qty = document.createElement('span');
-      tot_pri.textContent="Total Price"
+      tot_pri.textContent="Total Asteroids"
       name.textContent = "Name";
-      price.textContent = "Price";
-      qty.textContent = "Qty";
+      price.textContent = "Asteroids";
+      qty.textContent = "LightYear";
       dev.appendChild(name);
       dev.appendChild(price);
       dev.appendChild(qty);
@@ -166,14 +180,17 @@ function createMenuItem(name) {
       bill.style.color="black";
       thanks_text=document.createElement('span');
       thanks_text.textContent="Enjoy your time at the Space Zone !";
+      
       thanks_text.style.color="black";
       thanks_text.fontSize="20px";
-      bill.appendChild(thanks_text);
 
       bill.style.height="auto";
+      bill.style.fontFamily="Ubuntu";
 
 
-
+      document.querySelector('.receipt-card .subhead').textContent = "Space Zone";
+      
+      bill.appendChild(thanks_text);
 
 
 
@@ -347,11 +364,11 @@ function filterFunction(e) {
 // }
 
 search=document.getElementById("search");
-console.log(search);
+// console.log(search);
 document.getElementById("search").addEventListener("click",function(){
   // let game_name=document.getElementById("myInput").value;
   const links=document.querySelectorAll("#myDropdown a");
-  console.log("hey");
+  // console.log("hey");
   for(i of links)
   {
     if(i.style.display!="none")
@@ -362,7 +379,7 @@ document.getElementById("search").addEventListener("click",function(){
   }
 
   let ref="#"+g_name;
-  console.log(g_name);
+  // console.log(g_name);
   this.setAttribute("href",ref);
   const ele=document.getElementById(g_name);
   const flipCard=ele.parentElement.parentElement;
@@ -383,9 +400,9 @@ document.getElementById("search").addEventListener("click",function(){
   }
   // document.getElementById("myInput").select();
   setTimeout(print,3000);
-
+  g_name = "";
   
-  
+  myFunction();
 
   // border-style:dashed;
   // border-color: white;
